@@ -311,7 +311,25 @@
         </p>
     </section>
     <!-- footer section -->
-
+    <script>
+        (function (w, d, s, o, f, js, fjs) {
+          w["botsonic_widget"] = o;
+          w[o] =
+            w[o] ||
+            function () {
+              (w[o].q = w[o].q || []).push(arguments);
+            };
+          (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+          js.id = o;
+          js.src = f;
+          js.async = 1;
+          fjs.parentNode.insertBefore(js, fjs);
+        })(window, document, "script", "Botsonic", "https://d1m9uqhmlogh4h.cloudfront.net/CDN/botsonic.min.js");
+        Botsonic("init", {
+          serviceBaseUrl: "https://api.writesonic.com",
+          token: "9369f375-1ccd-4aa9-bd7c-3b6c53ed2a6c",
+        });
+      </script>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
 
